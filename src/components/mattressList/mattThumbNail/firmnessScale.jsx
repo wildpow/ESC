@@ -14,9 +14,9 @@ const Firmness = styled.div`
   justify-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  @media screen and (min-width: 768px) {
-    height: 20px;
-  }
+  /* @media screen and (min-width: 768px) { */
+  height: 20px;
+  /* } */
   .firm,
   .soft {
     font-family: ${props => props.theme.MainFont1};
@@ -24,10 +24,11 @@ const Firmness = styled.div`
     width: 22%;
     text-align: center;
     font-size: 0.8rem;
-    @media screen and (min-width: 768px) {
-      font-size: 1rem;
-      width: 20%;
-    }
+    /* @media screen and (min-width: 768px) { */
+    font-size: 1rem;
+    width: 20%;
+    font-weight: 700;
+    /* } */
   }
 
   .scale {
@@ -44,14 +45,12 @@ const Firmness = styled.div`
       position: absolute;
       top: 0;
       left: ${props => props.firmNum};
-      @media screen and (min-width: 768px) {
-        height: 15px;
-      }
-    }
-    @media screen and (min-width: 768px) {
+
       height: 15px;
-      width: 80%;
     }
+
+    height: 15px;
+    width: 80%;
   }
 `;
 

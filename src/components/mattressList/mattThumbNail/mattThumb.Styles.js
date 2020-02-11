@@ -8,16 +8,16 @@ export const StyledLink = styled(Link)`
   flex-direction: column;
   justify-content: space-around;
   margin: 2px;
-  width: 150px;
-  height: 216px;
+  /* width: 150px;
+  height: 216px; */
   margin-top: 15px;
   background-color: white;
   transition: ${props => props.theme.hoverTransition};
   box-shadow: ${props => props.theme.hoverBoxBefore};
   @media (min-width: 360px) {
     margin: 5px;
-    width: 165px;
-    height: 235px;
+    /* width: 165px;
+    height: 235px; */
   }
   @media (min-width: 414px) {
     width: 185px;
@@ -67,9 +67,18 @@ export const Banner = styled.div`
   padding-bottom: 3px;
   padding-right: 10px;
   padding-left: 10px;
-  margin-left: 5px;
+  margin-left: 15px;
   letter-spacing: 0.015rem;
   margin-top: 3px;
+
+  /* margin-left: 45px; */
+  width: 70%;
+  font-size: 1rem;
+  margin-top: 18px;
+  padding-right: 27px;
+  padding-left: 28px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   :after {
     content: " ";
     position: absolute;
@@ -133,13 +142,13 @@ export const PriceRange = styled.div`
   font-weight: 700;
   text-align: center;
   z-index: 5;
-  @media (min-width: 360px) {
+  /* @media (min-width: 360px) {
     font-size: 0.8rem;
-  }
-  @media (min-width: 768px) {
-    font-size: 1rem;
-    letter-spacing: 0.05rem;
-  }
+  } */
+  /* @media (min-width: 768px) { */
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  /* } */
 `;
 export const Name = styled.div`
   font-family: ${props => props.theme.MainFont1};
@@ -152,23 +161,25 @@ export const Name = styled.div`
   padding-top: 5px;
   font-size: 0.9rem;
   margin: 0;
-  @media (min-width: 768px) {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1.2rem;
-    margin: 0;
-    letter-spacing: 0.05rem;
-  }
+  /* @media (min-width: 768px) { */
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.2rem;
+  margin: 0;
+  letter-spacing: 0.05rem;
+  /* } */
 `;
 
 export const MattImgContainer = styled.div`
   color: white;
   margin: 0 auto 0px auto;
-  width: 110px;
-  height: 110px;
+  /* width: 110px;
+  height: 110px; */
+  width: 250px;
+  height: 250px;
   @media (min-width: 360px) {
-    width: 130px;
-    height: 130px;
+    /* width: 130px;
+    height: 130px; */
   }
   @media (min-width: 768px) {
     width: 250px;

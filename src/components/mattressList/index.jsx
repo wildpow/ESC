@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 import BreadCrumbs, { BreadWrapper } from "../breadCrumbs";
 import {
   MainWrapper,
-  Wrapper,
+  // Wrapper, //Old
   // MainTitle,
   Img,
   StearnsImgPlaceHolder,
@@ -15,6 +15,14 @@ import {
 import SealyImg from "../../images/sealyLogo.png";
 import StearnsImg from "../../images/stearnsLogo.png";
 import TempurImg from "../../images/tempurLogo2.png";
+
+const NewWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* grid-gap: 10px;
+  grid-row-gap: 200px;
+  grid-template-rows: repeat(2, 300px); */
+`;
 
 const NewThing = styled.header`
   display: flex;
@@ -127,7 +135,7 @@ const MattressList = ({
           <Link to={`/brands/${brandName}/landing`}>Learn more</Link>
         </div>
       </NewThing>
-      <Wrapper>{children}</Wrapper>
+      <NewWrapper>{children}</NewWrapper>
       <BreadWrapper Brands Bottom>
         <BreadCrumbs next="Brands" here={brandName} />
       </BreadWrapper>
