@@ -8,6 +8,7 @@ const cfg = {
     siteUrl: `https://www.escmattresscenter.com`,
   },
   plugins: [
+    "gatsby-plugin-preact",
     {
       resolve: `gatsby-source-datocms`,
       options: {
