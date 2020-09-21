@@ -9,6 +9,7 @@ import Layout from "../components/Layout";
 import { Main } from "../styles/homeStyles";
 import Front from "../components/Home/front";
 import TopThreeMatts from "../components/Home/Top3Mattress";
+import Search from "../components/Search";
 
 const IndexPage = ({ data }) => {
   const { carousel } = data.datoCmsFrontPage;
@@ -51,6 +52,7 @@ const IndexPage = ({ data }) => {
           })}
         </Carousel>
         <Front />
+        <Search />
         <TopThreeMatts />
       </Main>
     </Layout>
