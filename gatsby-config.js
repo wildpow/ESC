@@ -137,6 +137,27 @@ const cfg = {
       },
     },
     {
+      resolve: "gatsby-plugin-lunr",
+      options: {
+        languages: [{ name: "en" }],
+        fields: [
+          { name: "title", store: true, attributes: { boost: 10 } },
+          { name: "handle", store: true },
+          { name: "productType", store: true, attributes: { boost: 20 } },
+          { name: "vendor", store: true, attributes: { boost: 15 } },
+        ],
+        resolvers: {
+          ShopifyProduct: {
+            title: (node) => node.title,
+            handle: (node) => node.handle,
+            productType: (node) => node.productType,
+            vendor: (node) => node.productType,
+          },
+        },
+        filename: "search_index.json",
+      },
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
